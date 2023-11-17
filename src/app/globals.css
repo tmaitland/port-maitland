@@ -27,3 +27,51 @@ body {
 }
 
 
+/*home page*/
+
+.hold-teaser-text {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.about-teaser, .projects-teaser {
+ padding: 1rem 0rem;
+ margin: 2rem 0rem;
+}
+.hold-project-cards {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.hold-cta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.hold-header-cta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hold-cta a {
+  margin: 1.5rem 0rem;
+}
+.hold-header-cta a.bloglink {
+  margin: 0rem 1rem 2rem;
+}
+.project.card {
+  margin: 1rem .75rem;
+  height: 100%;
+}
+.project.card .card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.project.card img {
+  width: 100%;
+  height: auto;
+}
+
