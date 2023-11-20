@@ -1,5 +1,6 @@
 import Navigation from "../../components/Navigation";
 import Footer from "../../components/Footer";
+import projects from "../../js/projects.js";
 
 export default function Projects() {
     return (
@@ -20,7 +21,33 @@ export default function Projects() {
             </div>
           </div>
         </div>
-    
+      <section className="hold-projects">
+        <div className="container">
+          <div className="row">
+            {projects.map((project) => {
+              return (
+              <div key={project} className={"col-lg-4"}>
+                <a href={project.url} className="card-link" target="_blank">
+                  <div className="card mb-4">
+                    {/* <Image
+                      src={""}
+                      alt=""
+                    /> */}
+                    <div className="card-body">
+                      <h3 className="card-title">{project.title}</h3>
+                      <p className="card-text">
+                       {project.description}
+                      </p>
+                    </div>
+                  </div>               
+                </a>
+              </div>   
+              );
+              // console.log(project);
+            })}
+          </div>
+        </div>
+      </section>
        <Footer/>
       </main>
     )

@@ -75,3 +75,7 @@ body {
   height: auto;
 }
 
+/* projectcs page */
+.card-link {
+  text-decoration: none;
+}
