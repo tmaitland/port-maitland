@@ -9,7 +9,7 @@ export default function Navigation() {
             <span className="navbar-toggler-icon"></span>
             </button>
             <div className="collapse navbar-collapse" id="navbarNav">
-            <ul className="navbar-nav">
+            <ul className="navbar-nav ms-auto">
                 <li className="nav-item">
                     <Link className="nav-link active" aria-current="page" href="/">Home</Link>
                 </li>
@@ -21,6 +21,9 @@ export default function Navigation() {
                 </li>
                 <li className="nav-item">
                     <Link className="nav-link" href="/contact">Contact</Link>
+                </li>
+                <li className="nav-item">
+                    <a className="nav-link" href="https://tonitalkstech.com/" target="_blank">ToniTalksTech</a>
                 </li>
             </ul>
             </div>

@@ -1,27 +1,87 @@
 const projects = [
    {
     title: "ACCRP Truth & Reconciliation",
-    description: `This website was made for Alachua County's Community Remembrance Project.`,
+    description: `I designed and developed this website for Alachua County's Community Remembrance Project.`,
     url: "",
-    screenshot: ""
+    screenshot: "/accrp.png",
+    alt: "A screencapture of the header from the Alachua County Community Remembrance Project website."
    },
    {
     title: "240 Certification",
-    description: `This website was made for 240 Tutoring's 240 Certification website, which helps give educators more information about how to get certified in their field.`,
+    description: `I developed a WordPress theme and developed custom Gutenberg Blocks using React for 240 Tutoring's 240 Certification website.`,
     url: "https://240certification.com/",
-    screenshot: ""
+    screenshot: "/240cert.png",
+    alt: "A screencapture of the header from 240 Tutoring's 240 Certification website."
    },
    {
     title: "UF Experts",
-    description: `This website was made for 240 Tutoring's 240 Certification website, which helps give educators more information about how to get certified in their field.`,
+    description: `I designed and developed a WordPress theme for this website.`,
     url: "https://experts.ufl.edu/",
-    screenshot: ""
+    screenshot: "/experts-ufl.png",
+    alt: "A screencapture of the header from the University of Florida's Experts website."
    },
    {
     title: "Artificial Intelligence",
-    description: `This project focused on the re-design and re-development of the Artificial Intelligence website that the University of Florida launched.`,
-    url: "https://experts.ufl.edu/",
-    screenshot: ""
+    description: `I re-designed and re-developed the Artificial Intelligence website that the University of Florida launched.`,
+    url: "https://ai.ufl.edu/",
+    screenshot: "/ai-ufl.png",
+    alt: "A screencapture of the header from the University of Florida's Artificial Intelligence website."
+   },
+   {
+    title: "UF Brand Center",
+    description: `I used the Google Charts API powered by information from Google Sheets to display Social Media information for certain colleges and organizations at the University of Florida.`,
+    url: "https://brandcenter.ufl.edu/social-media-accounts/",
+    screenshot: "/brandcenter-sm.png",
+    alt: "A screencapture of the Social Media table powered by Google Charts and Google Sheets."
+   },
+   {
+    title: "UF CDO Heritage Months",
+    description: `I designed and developed webpages that provide a space to recognize months in honor of key identities that are often overlooked.`,
+    url: "https://cdo.ufl.edu/heritage-months/nativeamericanheritagemonth/",
+    screenshot: "/cdo-heritage-mo.png",
+    alt: "A screencapture of one of the Heritage Month webpages. This one showcases Native American Heritage Month."
+   },
+   {
+    title: "Wellness (formerly Coronavirus)",
+    description: `I re-designed and developed this website to help provide updated information about COVID-19 during the coronavirus pandemic.`,
+    url: "https://wellness.ufl.edu/",
+    screenshot: "/wellness.png",
+    alt: "A screencapture of the UF Wellness website."
+   },
+   {
+    title: "Antiracism",
+    description: `I designed and developed a website that aimed to provide resources about and showcase UF's commitment to fighting racism.`,
+    url: "https://antiracism.ufl.edu/",
+    screenshot: "/antiracism-ufl.png",
+    alt: "A screencapture of UF's Antiracism website."
+   },
+   {
+    title: "UF News Podcast",
+    description: `I developed a page that aimed to display the latest episodes from a UF podcast series called From Florida.`,
+    url: "https://news.ufl.edu/from-florida-podcast/",
+    screenshot: "/podcast-news.png",
+    alt: "A screencapture of UF's News' podcast webpage."
+   },
+   {
+    title: "Marine Industries Association",
+    description: `I helped to design and develop pages on the Marine Industries Association of South Florida, using HTML, CSS/LESS, JS, and Coldfusion.`,
+    url: "https://www.miasf.org/",
+    screenshot: "/miasf.png",
+    alt: "A screencapture of the MIASF website."
+   },
+   {
+    title: "Florida Breast Cancer Foundation",
+    description: `For this website, I redeveloped the navigation bar and some pages, using HTML, CSS/LESS, JS, and Coldfusion.`,
+    url: "https://www.floridabreastcancer.org/",
+    screenshot: "/flbcf.png",
+    alt: "A screencapture of the FBCF website."
+   },
+   {
+    title: "AvYachts",
+    description: `For this website, I redeveloped the navigation bar and redesigned and developed some pages, using HTML, CSS/LESS, JS, and Coldfusion.`,
+    url: "https://www.avyachts.com/",
+    screenshot: "/avyachts.png",
+    alt: "A screencapture of the AvYachts website."
    },
 ]
 

@@ -1,9 +1,9 @@
 import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
 import Image from "next/image";
-import projectOne from "../imgs/240Tutoring-home.png";
-import projectTwo from "../imgs/experts-ufl.png";
-import projectThree from "../imgs/ai-ufl.png";
+import projectOne from "../imgs/projects/240cert.png";
+import projectTwo from "../imgs/projects/experts-ufl.png";
+import projectThree from "../imgs/projects/ai-ufl.png";
 
 export default function Home() {
   return (
@@ -90,15 +90,17 @@ export default function Home() {
               <div className="project card col-lg-4" id="one">
                 <Image
                   src={projectOne}
-                  alt="240 Tutoring Website project screenshot image"
+                  alt="240 Certification Website project screenshot image"
+                  width={400}
+                  height={250}
                 />
                 <div className="card-body">
-                  <h3 className="card-title">240 Tutoring</h3>
+                  <h3 className="card-title">240 Certification</h3>
                   <p className="card-text">
                     With this project, I was asked to develop a new website for
                     the certification service that 240Tutoring provides.
                   </p>
-                  <a href="/projects/240tutoring" className="btn btn-info">
+                  <a href="/projects/240certification" className="btn btn-info">
                     View Details
                   </a>
                 </div>

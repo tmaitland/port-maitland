@@ -1,6 +1,7 @@
 import Navigation from "../../components/Navigation";
 import Footer from "../../components/Footer";
 import projects from "../../js/projects.js";
+import Image from "next/image";
 
 export default function Projects() {
     return (
@@ -29,10 +30,13 @@ export default function Projects() {
               <div key={project} className={"col-lg-4"}>
                 <a href={project.url} className="card-link" target="_blank">
                   <div className="card mb-4">
-                    {/* <Image
-                      src={""}
-                      alt=""
-                    /> */}
+                    <Image
+                      src={project.screenshot}
+                      alt={project.alt}
+                      className="project-page-imgs"
+                      width={500}
+                      height={300}
+                    />
                     <div className="card-body">
                       <h3 className="card-title">{project.title}</h3>
                       <p className="card-text">
