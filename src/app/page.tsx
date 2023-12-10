@@ -1,16 +1,17 @@
 import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
 import Image from "next/image";
-import projectOne from "../imgs/projects/240cert.png";
-import projectTwo from "../imgs/projects/experts-ufl.png";
+import projectOne from "../imgs/projects/accrp.png";
+import projectTwo from "../imgs/projects/240cert.png";
 import projectThree from "../imgs/projects/ai-ufl.png";
+import featBlogPost from "../imgs/feat-blog-post.png";
 
 export default function Home() {
   return (
     <main>
       <Navigation />
       <section className="top-hero">
-        <div className="px-4 pt-5 my-5 text-center border-bottom">
+        <div className="container text-center">
           <h1 className="display-4 fw-bold">Hello! I'm Toni-Lee. </h1>
           <div className="col-lg-6 mx-auto">
             <p className="lead mb-4">
@@ -18,35 +19,13 @@ export default function Home() {
               programming and Web Design. I also have a background in K-12
               education, research, history, and writing.
             </p>
-          </div>
-          <div className="overflow-hidden">
-            <div className="container px-5">
-              <img
-                src="https://getbootstrap.com/docs/5.0/examples/heroes/bootstrap-docs.png"
-                className="img-fluid border rounded-3 shadow-lg mb-4"
-                alt="Example image"
-                width="700"
-                height="500"
-                loading="lazy"
-              />
-              <p className="lead">
-                Check out my latest blog post, or see the rest of my site below!
-              </p>
-              <div className="hold-header-cta">
-                <a
-                  target="_blank"
-                  href="https://tonitalkstech.com/2023/11/14/tonitalks-dealing-with-grief/"
-                  className="btn btn-primary px-4 bloglink"
-                >
-                  Read Blog
-                </a>
-                <a
-                  href="#about-teaser"
-                  className="btn btn-primary px-4 bloglink"
-                >
-                  See More Below
-                </a>
-              </div>
+            <p className="lead">
+              Check out my latest blog post, or see the rest of my site below!
+            </p>
+            <div className="hold-header-cta">
+              <a href="#about-teaser" className="btn-first px-4 bloglink">
+                See More Below
+              </a>
             </div>
           </div>
         </div>
@@ -57,96 +36,151 @@ export default function Home() {
             <h2 className="teaser-heading text-center">About</h2>
             <div className="hold-teaser-text">
               <p className="lead teaser-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Pellentesque elit eget gravida cum sociis natoque penatibus et
-                magnis. Sagittis id consectetur purus ut faucibus. Enim nunc
-                faucibus a pellentesque sit amet porttitor. Sit amet purus
-                gravida quis blandit turpis cursus.
+                Welcome! I’m so glad to have you here. I made this website to
+                showcase some projects I have worked on in the past and that I
+                have been working on recently. For the past five years, I have
+                been working professionally as a Web Developer. While most of my
+                work does lie in designing websites and developing the front
+                end, I do work with the backend to input data or access
+                information from the database.
               </p>
-              <a href="/about" className="btn btn-primary px-4">
+              <a href="/about" className="btn-first px-4">
                 More About Me
               </a>
             </div>
           </div>
         </div>
       </section>
-      <section className="projects-teaser">
+      <section className="projects-teaser" id="projects-featured">
         <div className="container">
           <div className="row">
             <h2 className="teaser-heading text-center">Featured Projects</h2>
             <div className="hold-teaser-text">
               <p className="lead teaser-text">
-                Feugiat pretium nibh ipsum consequat nisl vel pretium lectus.
-                Porttitor leo a diam sollicitudin. Ornare suspendisse sed nisi
-                lacus sed viverra tellus. Sit amet mauris commodo quis. Non
-                tellus orci ac auctor augue mauris augue neque. Amet consectetur
-                adipiscing elit duis tristique sollicitudin nibh sit.
+                These are the most recent projects that I have worked on, and
+                they have a bit more detailed information about the process that
+                went into completing each of them. This will be updated as I
+                take on and complete more current projects.
               </p>
             </div>
           </div>
-          <div className="row">
-            <div className="hold-project-cards">
-              <div className="project card col-lg-4" id="one">
+          <div className="row hold-project-cards">
+            <div className="col-lg-4 col-md-12">
+             <div className="project card" id="one">
                 <Image
                   src={projectOne}
-                  alt="240 Certification Website project screenshot image"
+                  alt="ACCRP Website project screenshot image"
                   width={400}
-                  height={250}
+                  height={300}
+                />
+                <div className="card-body">
+                  <h3 className="card-title">ACCRP: Truth & Reconciliation</h3>
+                  <p className="card-text">
+                    With this project, I was asked to develop a new website for
+                    the Alachua County Community Remembrance Project (ACCRP).
+                  </p>
+                  <a href="/projects/accrp" className="btn-second">
+                    View Details
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-4 col-md-12">
+              <div className="project card" id="two">
+                <Image
+                  src={projectTwo}
+                  width={400}
+                  height={300}
+                  alt="240 certification website project screenshot image"
                 />
                 <div className="card-body">
                   <h3 className="card-title">240 Certification</h3>
                   <p className="card-text">
-                    With this project, I was asked to develop a new website for
-                    the certification service that 240Tutoring provides.
+                    I was asked to develop custom WordPress content blocks to
+                    accompany a custommized WordPress theme for 240 Tutoring's
+                    new 240 Certification website.
                   </p>
-                  <a href="/projects/240certification" className="btn btn-info">
+                  <a href="/projects/240certification" className="btn-second">
                     View Details
                   </a>
                 </div>
               </div>
-              <div className="project card col-lg-4" id="two">
-                <Image
-                  src={projectTwo}
-                  width={400}
-                  height={250}
-                  alt="Experts.ufl.edu website project screenshot image"
-                />
-                <div className="card-body">
-                  <h3 className="card-title">UF Experts</h3>
-                  <p className="card-text">
-                    This project was a re-design and re-development of the
-                    University of Florida's Experts website, featured in a custommized WordPress theme.
-                  </p>
-                  <a href="/projects/ufexperts" className="btn btn-info">
-                    View Details
-                  </a>
-                </div>
-              </div>
-              <div className="project card col-lg-4" id="three">
+            </div>
+            <div className="col-lg-4 col-md-12">
+              <div className="project card" id="three">
                 <Image
                   src={projectThree}
                   width={400}
-                  height={250}
+                  height={300}
                   alt="Ai.ufl.edu website project screenshot image"
                 />
-                 <div className="card-body">
-                  <h3 className="card-title">Artificial Intelligence</h3>
+                <div className="card-body">
+                  <h3 className="card-title">UF: Artificial Intelligence</h3>
                   <p className="card-text">
-                  This project focused on the re-design and re-development of the 
-                  Artificial Intelligence website that the University of Florida launched.
+                    In this project, I was asked to focus on the re-design and re-development of
+                    the Artificial Intelligence website that the University of
+                    Florida launched.
                   </p>
-                  <a href="/projects/ai-uf" className="btn btn-info">
+                  <a href="/projects/aiuf" className="btn-second">
                     View Details
                   </a>
                 </div>
-              </div>
+            </div>
+             
             </div>
             <div className="hold-cta">
-              <a href="/projects" className="btn btn-primary px-4">
-                See More Projects
+              <a href="/projects" className="btn-first px-4">
+                See All Projects
               </a>
             </div>
+          </div>
+        </div>
+      </section>
+      <section className="blog-teaser">
+        <div className="container">
+          <div className="row">
+            <h2 className="teaser-heading text-center">Featured Blog Post</h2>
+            <div className="hold-teaser-text">
+              <p className="lead teaser-text">
+                I also have a blog where I discuss various topics like
+                technology, education, music, and self care. You’re welcome to
+                follow my whereabouts there, too. Below you’ll find an excerpt
+                and link to my most recent post.
+              </p>
+            </div>
+           
+              <div className="col-lg-6">
+                <div className="hold-feat-img">
+                  <Image
+                    className="feat-blog-post-img"
+                    src={featBlogPost}
+                    alt="featured blog post from ToniTalksTech screenshot image"
+                  />
+
+                </div>
+              </div>
+              <div className="col-lg-6">
+                <p className="lead blog-excerpt">
+                  I have been away from this blog for quite some time, with
+                  every intention of returning. A lot has happened within the
+                  past almost two years that has kept me from returning fully. I
+                  had to take time to heal, grieve, deal with family affairs,
+                  and attempt to manage my life healthily. I recently
+                  experienced the unexpected passing of my Mother, which to this
+                  day I still struggle to fully accept, even though I know the
+                  reality.
+                </p>
+                <div className="hold-header-cta">
+                  <a
+                    target="_blank"
+                    href="https://tonitalkstech.com/2023/11/14/tonitalks-dealing-with-grief/"
+                    className="btn-first px-4 bloglink"
+                  >
+                    Read Blog Post
+                  </a>
+                </div>
+              </div>
+
           </div>
         </div>
       </section>

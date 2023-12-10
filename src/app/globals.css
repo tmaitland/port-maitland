@@ -1,17 +1,14 @@
 :root {
   --max-width: 1100px;
   --border-radius: 12px;
-  --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
-    'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
-    'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
-
-
+  --font-mono: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono",
+    "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
+    "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
 }
 
-@media () {
+@media() {
   :root {
-   
- }
+  }
 }
 
 * {
@@ -27,16 +24,60 @@ body {
 }
 
 
-/*home page*/
+.btn-first {
+  background-color: #F00699;
+  color: #fff;
+  padding: 0.75rem;
+  border-radius: 10px;
+  text-decoration: none;
+}
 
+.btn-first:hover {
+  background-color: #d0cfec;
+  color: #000807;
+  transition: .25s;
+  box-shadow: 1px 2px 3px rgba(0,0,0,0.25);
+}
+
+.btn-second {
+  background-color: #d0cfec;
+  color: #000807;
+  padding: 0.75rem;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.btn-second:hover {
+  background-color: #F00699;
+  color: #fff;
+  transition: .25s;
+  box-shadow: 1px 2px 3px rgba(0,0,0,0.25);
+}
+
+/*home page*/
+section.top-hero {
+  background-image: linear-gradient(
+      rgba(250, 250, 250, 0.5),
+      rgba(250, 250, 250, 0.25)
+    ),
+    url("../imgs/dragonfly-ave-9kym63uN-QE-unsplash.jpg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 35rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
 .hold-teaser-text {
   align-items: center;
   display: flex;
   flex-direction: column;
 }
-.about-teaser, .projects-teaser {
- padding: 1rem 0rem;
- margin: 2rem 0rem;
+.about-teaser,
+.projects-teaser {
+  padding: 1rem 0rem;
+  margin: 2rem 0rem;
 }
 .hold-project-cards {
   align-items: center;
@@ -62,7 +103,6 @@ body {
   margin: 0rem 1rem 2rem;
 }
 .project.card {
-  margin: 1rem .75rem;
   height: 100%;
 }
 .project.card .card-body {
@@ -75,13 +115,125 @@ body {
   width: 100%;
   height: auto;
 }
+section.blog-teaser {
+  margin: 3rem auto;
+}
+section.blog-teaser p.blog-excerpt {
+  margin: 1rem;
+  padding: 1rem;
+  font-style: italic;
+}
+section.blog-teaser img.feat-blog-post-img {
+  width: 100%;
+  height: auto;
+  margin: 1rem;
+}
 
-/* projectcs page */
+/* about page */
+section.about-header {
+  background-image: linear-gradient(
+      rgba(250, 250, 250, 0.5),
+      rgba(250, 250, 250, 0.25)
+    ),
+    url("../imgs/pexels-adrienne-andersen-2351844.jpg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+section.about-text-container {
+  padding: 2rem;
+  margin: 1rem;
+}
+
+/* projects page */
 .card-link {
   text-decoration: none;
 }
-
+section.projects-header {
+  margin-top: 4rem;
+}
 .card img.project-page-imgs {
   width: 100%;
   height: auto;
+}
+
+/*featured projects detail pages */
+section.feat-proj1-header, section.feat-proj2-header, section.feat-proj3-header {
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 20rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  box-shadow: 1px 3px 10px rgba(0,0,0,0.25);
+  padding: 2rem;
+}
+
+h1.feat-proj-heading {
+  color: #fafafa;
+}
+section.feat-project-text-container {
+  margin: 1rem;
+  padding: 1rem;
+}
+
+/* featured project 1 page - accrp */
+section.feat-proj1-header {
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.25),
+      rgba(0, 0, 0, 0.85)
+    ),
+    url("../imgs/projects/accrp.png");
+    background-position: center;
+}
+
+/* featured project 2 page - 240 cert */
+section.feat-proj2-header {
+  background-image: linear-gradient(
+    rgba(250, 250, 250, 0.05),
+    rgba(250, 250, 250, 0.05),
+    rgba(250, 250, 250, 0.95),
+    rgba(250, 250, 250, 0.95)
+  ),
+  url("../imgs/projects/240cert.png");
+  background-position: bottom;
+}
+
+section.feat-proj2-header h1.feat-proj-heading {
+  color: #000807;
+}
+
+/* featured project 3 page - ai uf*/
+section.feat-proj3-header {
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0.25),
+    rgba(0, 0, 0, 0.85)
+  ),
+  url("../imgs/projects/ai-ufl.png");
+  background-position: top;
+}
+
+
+/* contact page */
+section.contact-header {
+  background-image: linear-gradient(
+      rgba(250, 250, 250, 0.25),
+      rgba(250, 250, 250, 0.5)
+    ),
+    url("../imgs/pexels-christina-morillo-1181210.jpg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+section.hold-contact-content {
+  padding: 2rem;
+  margin: 1rem;
 }

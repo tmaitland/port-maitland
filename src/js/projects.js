@@ -2,7 +2,7 @@ const projects = [
    {
     title: "ACCRP Truth & Reconciliation",
     description: `I designed and developed this website for Alachua County's Community Remembrance Project.`,
-    url: "",
+    url: "https://truth.alachuacounty.us/",
     screenshot: "/accrp.png",
     alt: "A screencapture of the header from the Alachua County Community Remembrance Project website."
    },
@@ -14,18 +14,18 @@ const projects = [
     alt: "A screencapture of the header from 240 Tutoring's 240 Certification website."
    },
    {
-    title: "UF Experts",
-    description: `I designed and developed a WordPress theme for this website.`,
-    url: "https://experts.ufl.edu/",
-    screenshot: "/experts-ufl.png",
-    alt: "A screencapture of the header from the University of Florida's Experts website."
-   },
-   {
     title: "Artificial Intelligence",
     description: `I re-designed and re-developed the Artificial Intelligence website that the University of Florida launched.`,
     url: "https://ai.ufl.edu/",
     screenshot: "/ai-ufl.png",
     alt: "A screencapture of the header from the University of Florida's Artificial Intelligence website."
+   },
+   {
+    title: "UF Experts",
+    description: `I designed and developed a WordPress theme for this website.`,
+    url: "https://experts.ufl.edu/",
+    screenshot: "/experts-ufl.png",
+    alt: "A screencapture of the header from the University of Florida's Experts website."
    },
    {
     title: "UF Brand Center",
