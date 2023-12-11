@@ -69,14 +69,22 @@ section.top-hero {
   background-repeat: no-repeat;
   background-position: bottom;
 }
+.teaser-heading {
+  margin-bottom: 1rem;
+}
 .hold-teaser-text {
   align-items: center;
   display: flex;
   flex-direction: column;
+  margin-bottom: 1rem;
 }
-.about-teaser,
-.projects-teaser {
+.about-teaser {
   padding: 1rem 0rem;
+  margin: 2rem 0rem;
+}
+.projects-teaser {
+  background-color: #f0f8ff;
+  padding: 2rem 0rem;
   margin: 2rem 0rem;
 }
 .hold-project-cards {
@@ -104,6 +112,8 @@ section.top-hero {
 }
 .project.card {
   height: 100%;
+    box-shadow: 1px 2px 16px rgba(0,0,0,0.25);
+    border: none;
 }
 .project.card .card-body {
   display: flex;
@@ -171,6 +181,26 @@ section.feat-proj1-header, section.feat-proj2-header, section.feat-proj3-header 
   align-items: flex-end;
   box-shadow: 1px 3px 10px rgba(0,0,0,0.25);
   padding: 2rem;
+}
+p.project-overview, p.project-process, p.project-outcome {
+ margin: 1rem auto;
+}
+
+a.projectDetailLinks {
+  color:  #00283c;
+  font-weight: bold;
+  text-decoration: none;
+}
+a.projectDetailLinks:hover {
+  color: #F00699;
+}
+a.back-feat-projects {
+  color:  #00283c;
+  font-weight: bold;
+  text-decoration: none;
+}
+a.back-feat-projects:hover {
+  color: #F00699;
 }
 
 h1.feat-proj-heading {
