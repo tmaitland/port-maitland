@@ -1,6 +1,8 @@
 import Navigation from "../../../components/Navigation";
 import Footer from "../../../components/Footer";
 import Link from "next/link";
+import Image from "next/image";
+import projectAIUFImgs from "../../../js/projectAIUF.js";
 
 export default function AIUFProject() {
   return (
@@ -60,6 +62,30 @@ export default function AIUFProject() {
               mixture of sharp-cornered and round, soft-cornered containers in
               my AdobeXD mockups.
             </p>
+            <div className="row mini-gallery-row">
+              {projectAIUFImgs.map((img) => {
+               return (
+                  <div key={img} className={"col-lg-4"}>
+                      <a href={img.imgSrc} className="card-link" target="_blank">
+                        <div className="card mb-4">
+                          <Image
+                            src={img.imgSrc}
+                            width={700}
+                            height={700}
+                            className="mini-gallery-img"
+                            alt={img.imgAlt}
+                          />
+                           <div className="card-body">
+                              <p className="card-text">
+                               {img.imgAlt}
+                              </p>
+                          </div>
+                        </div>
+                      </a>
+                </div>
+               );
+              })}
+            </div>
             <p className="lead project-process">
               After designing, having the design reviewed and then eventually
               approved, the next step was development. I worked with a few

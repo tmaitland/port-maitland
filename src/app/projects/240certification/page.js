@@ -1,8 +1,10 @@
-import React from "react";
+// import * as React from "react";
 import Navigation from "../../../components/Navigation";
 import Footer from "../../../components/Footer";
 import Link from "next/link";
 import Image from "next/image";
+import project240Imgs from "../../../js/project240.js";
+
 
 export default function Cert240Project() {
   return (
@@ -71,6 +73,30 @@ export default function Cert240Project() {
               select the appropriate template for their page or blog posts. I
               also used CSS to style the theme according to the mockup provided.
             </p>
+            <div className="row mini-gallery-row">
+              {project240Imgs.map((img) => {
+               return (
+                  <div key={img} className={"col-lg-6"}>
+                      <a href={img.imgSrc} className="card-link" target="_blank">
+                        <div className="card mb-4">
+                          <Image
+                            src={img.imgSrc}
+                            width={700}
+                            height={700}
+                            className="mini-gallery-img"
+                            alt={img.imgAlt}
+                          />
+                           <div className="card-body">
+                              <p className="card-text">
+                               {img.imgAlt}
+                              </p>
+                          </div>
+                        </div>
+                      </a>
+                </div>
+               );
+              })}
+            </div>
             <p className="lead project-process">
               A large part of the project was the custom blocks. WordPress’s
               custom blocks allow users to add content to their site via an

@@ -22,6 +22,19 @@ body {
   max-width: 100vw;
   overflow-x: hidden;
 }
+section.top-hero p {
+  font-weight: 500;
+  text-shadow: 2px 1px 10px rgba(0, 0, 0, 0.25);
+ }
+
+/*Navigation*/
+a.navEnlace {
+  font-weight: 500;
+  font-size: 17px;
+  color: #00283c;
+}
+
+/*Footer*/
 
 
 .btn-first {
@@ -52,6 +65,10 @@ body {
   color: #fff;
   transition: .25s;
   box-shadow: 1px 2px 3px rgba(0,0,0,0.25);
+}
+nav.top-navigation {
+  /* height: 6rem; */
+  background: transparent;
 }
 
 /*home page*/
@@ -114,6 +131,7 @@ section.top-hero {
   height: 100%;
     box-shadow: 1px 2px 16px rgba(0,0,0,0.25);
     border: none;
+    margin: 1rem auto;
 }
 .project.card .card-body {
   display: flex;
@@ -142,7 +160,7 @@ section.blog-teaser img.feat-blog-post-img {
 /* about page */
 section.about-header {
   background-image: linear-gradient(
-      rgba(250, 250, 250, 0.5),
+      rgba(250, 250, 250, 0.75),
       rgba(250, 250, 250, 0.25)
     ),
     url("../imgs/pexels-adrienne-andersen-2351844.jpg");
@@ -164,7 +182,7 @@ section.about-text-container {
   text-decoration: none;
 }
 section.projects-header {
-  margin-top: 4rem;
+  margin-top: 6rem;
 }
 .card img.project-page-imgs {
   width: 100%;
@@ -204,18 +222,25 @@ a.back-feat-projects:hover {
 }
 
 h1.feat-proj-heading {
-  color: #fafafa;
+  color: #000807;
 }
 section.feat-project-text-container {
   margin: 1rem;
   padding: 1rem;
 }
+img.mini-gallery-img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  object-position: top;
+  margin-top: 2rem;
+}
 
 /* featured project 1 page - accrp */
 section.feat-proj1-header {
   background-image: linear-gradient(
-      rgba(0, 0, 0, 0.25),
-      rgba(0, 0, 0, 0.85)
+      rgba(250, 250, 250, 0.85),
+      rgba(250, 250, 250, 0.15)
     ),
     url("../imgs/projects/accrp.png");
     background-position: center;
@@ -240,8 +265,10 @@ section.feat-proj2-header h1.feat-proj-heading {
 /* featured project 3 page - ai uf*/
 section.feat-proj3-header {
   background-image: linear-gradient(
-    rgba(0, 0, 0, 0.25),
-    rgba(0, 0, 0, 0.85)
+    rgba(250, 250, 250, 0.85),
+    rgba(250, 250, 250, 0.85),
+    rgba(250, 250, 250, 0.15),
+    rgba(250, 250, 250, 0.15)
   ),
   url("../imgs/projects/ai-ufl.png");
   background-position: top;
@@ -251,7 +278,7 @@ section.feat-proj3-header {
 /* contact page */
 section.contact-header {
   background-image: linear-gradient(
-      rgba(250, 250, 250, 0.25),
+      rgba(250, 250, 250, 0.75),
       rgba(250, 250, 250, 0.5)
     ),
     url("../imgs/pexels-christina-morillo-1181210.jpg");
@@ -266,4 +293,64 @@ section.contact-header {
 section.hold-contact-content {
   padding: 2rem;
   margin: 1rem;
+}
+.hold-form-text {
+  margin-bottom: 1rem;
+}
+.form-paragraph {
+  margin: 1rem auto;
+  padding: 1rem;
+}
+div.cog-input div.el-textarea #cog-3.el-textarea__inner {
+  min-height: 200px;
+  height: 200px;
+}
+
+/**Footer*/
+footer.the-footer {
+  background-color: #f0f8ff;
+}
+
+/*//////////////////////////*/
+/*////Responsive Styles/////*/
+/*//////////////////////////*/
+
+@media(max-width: 991px){
+  div.navbar-collapse#navbarNav {
+    background-color: #f0f8ff;
+  }
+  a.navEnlace {
+    margin: auto 1rem;
+  }
+  button.navbar-toggler {
+    border: none;
+  }
+  a.navbar-brand {
+    margin: auto 1rem;
+  }
+  div.hold-nav-links#holdNavLinks {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  section.top-hero {
+    background-position: bottom;
+    background-size: auto;
+  }
+  section.top-hero p {
+   font-weight: 500;
+   text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.25);
+   font-size: 16px;
+  }
+  p.teaser-text, p.blog-excerpt, p.project-overview, p.project-process, p.project-outcome, section.about-text-container p, section.about-tech-resume p, section.projects-header p, p.form-paragraph   {
+    font-size: 16px;
+  }
+  p.card-text {
+    font-size: 15px;
+  }
+ 
+  section.about-text-container, section.about-tech-resume, section.about-teaser, section.projects-teaser, section.blog-teaser, section.hold-contact-content {
+    padding: 1rem;
+    margin: 1rem;
+  }
+
 }

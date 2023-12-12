@@ -1,6 +1,8 @@
 import Navigation from "../../../components/Navigation";
 import Footer from "../../../components/Footer";
 import Link from "next/link";
+import Image from "next/image";
+import projectACCRPImgs from "../../../js/projectACCRP.js";
 
 export default function ACCRP() {
   return (
@@ -64,6 +66,30 @@ export default function ACCRP() {
               establish some sort of brand identity, and redevelop the entire
               site.
             </p>
+            <div className="row mini-gallery-row">
+              {projectACCRPImgs.map((img) => {
+               return (
+                  <div key={img} className={"col-lg-4"}>
+                      <a href={img.imgSrc} className="card-link" target="_blank">
+                        <div className="card mb-4">
+                          <Image
+                            src={img.imgSrc}
+                            width={700}
+                            height={700}
+                            className="mini-gallery-img"
+                            alt={img.imgAlt}
+                          />
+                           <div className="card-body">
+                              <p className="card-text">
+                               {img.imgAlt}
+                              </p>
+                          </div>
+                        </div>
+                      </a>
+                </div>
+               );
+              })}
+            </div>
             <p className="lead project-process">
               For the mockups and style guide, I used Adobe XD. Since the
               initial iteration of the ACCRP website utilized React to build the
