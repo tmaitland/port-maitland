@@ -1,10 +1,26 @@
+'use client';
+
 import Navigation from "../../../components/Navigation";
+import React, { useState } from 'react';
+import Modal from 'react-modal';
 import Footer from "../../../components/Footer";
 import Link from "next/link";
 import Image from "next/image";
 import projectACCRPImgs from "../../../js/projectACCRP.js";
 
 export default function ACCRP() {
+  const [modalIsOpen, setModalIsOpen] = useState(false);
+  const [selectedImage, setSelectedImage] = useState('');
+
+  const openModal = (imgSrc) => {
+    setSelectedImage(imgSrc);
+    setModalIsOpen(true);
+  };
+
+  const closeModal = () => {
+    setModalIsOpen(false);
+  };
+
   return (
     <main>
       <Navigation />
@@ -69,8 +85,9 @@ export default function ACCRP() {
             <div className="row mini-gallery-row">
               {projectACCRPImgs.map((img) => {
                return (
-                  <div key={img} className={"col-lg-4"}>
-                      <a href={img.imgSrc} className="card-link" target="_blank">
+                  <div key={img} className={"col-lg-6"}>
+                      <a className="card-link" onClick={() => openModal(img.imgSrc)}
+            style={{ cursor: 'pointer' }}>
                         <div className="card mb-4">
                           <Image
                             src={img.imgSrc}
@@ -89,6 +106,22 @@ export default function ACCRP() {
                 </div>
                );
               })}
+               <Modal
+                isOpen={modalIsOpen}
+                onRequestClose={closeModal}
+                contentLabel="Image Modal"
+                style={{ cursor: 'pointer'}}
+                className="modalContent"
+                overlayClassName="modalOverlay"
+              >
+                <button className="btn-first modalButton" onClick={closeModal}>Close Modal</button>
+                <Image 
+                src={selectedImage} alt="Selected Image"  
+                width={1920}
+                height={4500} 
+                className="modalImage"
+                />
+              </Modal>
             </div>
             <p className="lead project-process">
               For the mockups and style guide, I used Adobe XD. Since the

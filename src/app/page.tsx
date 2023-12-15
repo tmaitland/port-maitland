@@ -20,7 +20,7 @@ export default function Home() {
               education, research, history, and writing.
             </p>
             <p className="lead">
-              Check out my latest blog post, or see the rest of my site below!
+              Check out the rest of my site below!
             </p>
             <div className="hold-header-cta">
               <a href="#about-teaser" className="btn-first px-4 bloglink">

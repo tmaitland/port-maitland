@@ -23,8 +23,8 @@ body {
   overflow-x: hidden;
 }
 section.top-hero p {
-  font-weight: 500;
-  text-shadow: 2px 1px 10px rgba(0, 0, 0, 0.25);
+  font-weight: 600;
+  /* text-shadow: 2px 1px 3px rgba(0, 0, 0, 0.25); */
  }
 
 /*Navigation*/
@@ -32,6 +32,13 @@ a.navEnlace {
   font-weight: 500;
   font-size: 17px;
   color: #00283c;
+}
+img.logo{
+  width: 100%;
+  height: auto;
+}
+span.navbar-toggler-icon {
+  filter: contrast(1.5);
 }
 
 /*Footer*/
@@ -74,14 +81,14 @@ nav.top-navigation {
 /*home page*/
 section.top-hero {
   background-image: linear-gradient(
-      rgba(250, 250, 250, 0.5),
-      rgba(250, 250, 250, 0.25)
+      rgba(250, 250, 250, 1.5),
+      rgba(250, 250, 250, 0.1)
     ),
     url("../imgs/dragonfly-ave-9kym63uN-QE-unsplash.jpg");
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 35rem;
+  height: 40rem;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom;
@@ -235,6 +242,28 @@ img.mini-gallery-img {
   object-position: top;
   margin-top: 2rem;
 }
+img.modalImage {
+  width: 100%;
+  height: auto;
+}
+.modalContent {
+  position: absolute;
+  inset: 90px 50px;
+  border: 1px solid rgb(204, 204, 204);
+  background: rgb(255, 255, 255);
+  overflow: auto;
+  border-radius: 4px;
+  outline: none;
+  padding: 0px;
+}
+.modalOverlay {
+  position: fixed;
+  inset: 0px;
+  background-color: rgba(255, 255, 255, 0.75);
+}
+.modalButton {
+ margin: 1rem 1.5rem; 
+}
 
 /* featured project 1 page - accrp */
 section.feat-proj1-header {
@@ -337,8 +366,8 @@ footer.the-footer {
     background-size: auto;
   }
   section.top-hero p {
-   font-weight: 500;
-   text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.25);
+   /* font-weight: 500; */
+   /* text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.25); */
    font-size: 16px;
   }
   p.teaser-text, p.blog-excerpt, p.project-overview, p.project-process, p.project-outcome, section.about-text-container p, section.about-tech-resume p, section.projects-header p, p.form-paragraph   {
@@ -352,5 +381,27 @@ footer.the-footer {
     padding: 1rem;
     margin: 1rem;
   }
+  section.feat-proj1-header, section.feat-proj2-header, section.feat-proj3-header{
+    background-size: auto;
+  }
 
+  .modalContent {
+    inset: 80px 9px 8px;   
+  }
+
+  .modalButton {
+   margin: 0.5rem; 
+  }
+  .btn-first.modalButton {
+    padding: 0.25rem;
+    font-size: .75rem; 
+  }
+
+}
+
+@media(max-width: 540px) {
+  img.logo{
+    width: 75%;
+    height: auto;
+  }
 }

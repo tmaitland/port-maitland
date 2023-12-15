@@ -2,6 +2,8 @@
 
 import Link from "next/link";
 import { useState, useEffect } from "react";
+import Image from "next/image";
+import logo from "../imgs/My-logo-proto.png";
 
 export default function Navigation() {
     const [windowHeight, setWindowHeight] = useState("");
@@ -23,7 +25,7 @@ export default function Navigation() {
       let bgColorChange = windowHeight / 700;
   
       if (bgColorChange < 1) {
-        let paddingChange= 30 - bgColorChange * 20;
+        let paddingChange = 30 - bgColorChange * 20;
         let boxShadowChange = bgColorChange * 0.1;
         setchangeBG(bgColorChange);
         setPadding(paddingChange);
@@ -40,7 +42,7 @@ export default function Navigation() {
       }}
     >
         <div className="container-fluid hold-nav-links" id="holdNavLinks">
-            <Link className="navbar-brand" href="/">Navbar</Link>
+            <Link className="navbar-brand" href="/"><Image className="logo" src={logo} width={128} height={43}/></Link>
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
             </button>
