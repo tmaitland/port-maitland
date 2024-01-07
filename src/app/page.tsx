@@ -15,9 +15,8 @@ export default function Home() {
           <h1 className="display-4 fw-bold">Hello! I'm Toni-Lee. </h1>
           <div className="col-lg-6 mx-auto">
             <p className="lead mb-4">
-              I'm an experienced Web Developer who specializes in Front-End
-              programming and Web Design. I also have a background in K-12
-              education, research, history, and writing.
+              I'm an experienced Web Developer, Web Designer, and Technical Writer. I also have a background in
+              education, research, and history. 
             </p>
             <p className="lead">
               Check out the rest of my site below!
@@ -42,7 +41,9 @@ export default function Home() {
                 been working professionally as a Web Developer. While most of my
                 work does lie in designing websites and developing the front
                 end, I do work with the backend to input data or access
-                information from the database.
+                information from the database. I am looking for roles that utilize my 
+                skills in web development, web design, and technical writing in the 
+                web development or software enginnering fields.
               </p>
               <a href="/about" className="btn-first px-4">
                 More About Me

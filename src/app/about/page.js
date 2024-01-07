@@ -40,10 +40,12 @@ export default function About() {
             Welcome! I’m so glad to have you here. I made this website to
             showcase some projects I have worked on in the past and that I have
             been working on recently. For the past five years, I have been
-            working professionally as a Web Developer. While most of my work
-            does lie in designing websites and developing the front end, I do
-            work with the backend to access information from a database or to
-            input data into it. Some technologies that I regularly work with
+            working professionally as a Web Developer.  While most of my
+                work does lie in designing websites and developing the front
+                end, I do work with the backend to input data or access
+                information from the database. I am looking for roles that utilize my 
+                skills in web development, web design, and technical writing in the 
+                web development or software enginnering fields. Some technologies that I regularly work with
             include HTML, CSS/SCSS, JavaScript, React, PHP, WordPress, and
             Terminal4. You can access my resume below if you would like to read
             more about my experience in web development and other technologies
