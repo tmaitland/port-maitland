@@ -64,7 +64,8 @@ export default function About() {
             and freelance projects over the past five years. Some of my other
             interests include reading, writing, art/design, music, fashion,
             social sciences, the humanities, AI, science, health and wellness,
-            and delicious food.
+            and delicious food. I explore pertinent technical topics and my other 
+            interests on my blog, <a class="projectDetailLinks" target="_blank" href="">ToniTalksTech</a>.
           </p>
         </div>
       </section>

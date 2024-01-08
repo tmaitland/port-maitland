@@ -137,7 +137,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="blog-teaser">
+      {/* <section className="blog-teaser">
         <div className="container">
           <div className="row">
             <h2 className="teaser-heading text-center">Featured Blog Post</h2>
@@ -184,7 +184,7 @@ export default function Home() {
 
           </div>
         </div>
-      </section>
+      </section> */}
       <Footer />
     </main>
   );
