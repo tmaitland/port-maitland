@@ -45,7 +45,7 @@ export default function About() {
             I do work with the backend to input data or access
             information from the database. I am looking for roles that utilize my 
             skills in web development, web design, and technical writing in the 
-            web development or software enginnering fields. Some technologies that I regularly work with
+            UX/UI, web development, or software enginnering fields. Some technologies that I regularly work with
             include HTML, CSS/SCSS, JavaScript, React, PHP, WordPress, and
             Terminal4. You can access my resume below if you would like to read
             more about my experience in web development and other technologies

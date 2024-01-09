@@ -43,7 +43,7 @@ export default function Home() {
                 I do work with the backend to input data or access
                 information from the database. I am looking for roles that utilize my 
                 skills in web development, web design, and technical writing in the 
-                web development or software enginnering fields.
+                UX/UI, web development, or software enginnering fields.
               </p>
               <a href="/about" className="btn-first px-4">
                 More About Me
